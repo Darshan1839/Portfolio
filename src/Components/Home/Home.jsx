@@ -1,10 +1,10 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaBootstrap } from "react-icons/fa";
 import { SiTailwindcss, SiMysql, SiDjango } from "react-icons/si";
-import WeatherApp from "../../assets/images/WeatherApp.png";
-import Todolist from "../../assets/images/ToDoListReact.png";
-import JobPortal from "../../assets/images/JobPortal.png";
-import profileImg from "../../assets/images/5312.jpg"; // Replace with your image
+import WeatherApp from '../../assets/Images/WeatherApp.png';
+import Todolist from "../../assets/Images/ToDoListReact.png";
+import JobPortal from "../../assets/Images/JobPortal.png";
+import profileImg from "../../assets/Images/5312.jpg"; // Replace with your image
 
 const Home = () => {
   const skills = [

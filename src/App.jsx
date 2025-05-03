@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import ContactForm from "./Components/Contact/Contact";
+import ProjectShowcase from "./Components/Projects/Projects";
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -54,6 +55,14 @@ const AnimatedRoutes = () => {
               </AnimatedPage>
             }
           />
+           <Route
+            path="projects"
+            element={
+              <AnimatedPage>
+                <ProjectShowcase />
+              </AnimatedPage>
+            }
+          />
           <Route
             path="contact"
             element={
@@ -63,6 +72,8 @@ const AnimatedRoutes = () => {
             }
           />
         </Route>
+        
+        
       </Routes>
     </AnimatePresence>
   );
