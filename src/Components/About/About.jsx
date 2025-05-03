@@ -6,6 +6,17 @@ import JobPortal from '../../assets/images/JobPortal.png';
 
 
 const About = () => {
+    const skills = [
+      { icon: <FaHtml5 className="text-red-500" />, label: "HTML" },
+      { icon: <FaCss3Alt className="text-blue-500" />, label: "CSS" },
+      { icon: <FaJs className="text-yellow-500" />, label: "JavaScript" },
+      { icon: <FaReact className="text-blue-400" />, label: "React" },
+      { icon: <SiTailwindcss className="text-teal-500" />, label: "Tailwind" },
+      { icon: <FaBootstrap className="text-purple-500" />, label: "Bootstrap" },
+      { icon: <SiMysql className="text-blue-800" />, label: "MySQL" },
+      { icon: <FaPython className="text-yellow-400" />, label: "Python" },
+      { icon: <SiDjango className="text-green-500" />, label: "Django" },
+    ];
     const projects = [
         { title: "JobPortal", description: "A FullStack JobPortal Website with modern and responsive design", image: JobPortal ,url:"https://jobportal-1-io1y.onrender.com/"},
         { title: "WeatherApp", description: "A modern, responsive WeatherApp built with React & Bootstrap.", image: WeatherApp ,url:"https://weather-search-alpha.vercel.app/"},
@@ -23,18 +34,15 @@ const About = () => {
         </p>
 
         {/* My Toolkit Section with Logos */}
-        <h3 className="text-3xl font-bold mb-4">My Toolkit 🛠</h3>
-        <div className="grid grid-cols-3 md:grid-cols-5 gap-6 text-5xl">
-          <FaHtml5 className="text-red-500 hover:scale-110 transition" />
-          <FaCss3Alt className="text-blue-500 hover:scale-110 transition" />
-          <FaJs className="text-yellow-500 hover:scale-110 transition" />
-          <SiTailwindcss className="text-teal-500 hover:scale-110 transition" />
-          <FaBootstrap className="text-purple-500 hover:scale-110 transition" />
-          <SiMysql className="text-blue-800 hover:scale-110 transition" />
-          <FaReact className="text-blue-400 hover:scale-110 transition" />
-          <FaPython className="text-yellow-400 hover:scale-110 transition" />
-          <SiDjango className="text-green-500 hover:scale-110 transition" />
-        </div>
+        <h3 className="text-3xl font-bold mb-6">My Toolkit 🛠</h3>
+          <div className="grid grid-cols-3 md:grid-cols-5 gap-6 text-5xl justify-items-center">
+            {skills.map((skill, i) => (
+              <div key={i} className="flex flex-col items-center text-center transition transform hover:scale-110">
+                {skill.icon}
+                <span className="mt-2 text-sm text-white">{skill.label}</span>
+              </div>
+            ))}
+          </div>
 
         {/* CTA Button */}
         <button className="px-6 py-3 mt-8 bg-blue-500 rounded-lg text-lg hover:bg-blue-600 shadow-lg transition hover:scale-105">
