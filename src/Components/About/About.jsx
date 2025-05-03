@@ -1,8 +1,8 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaBootstrap } from "react-icons/fa";
 import { SiTailwindcss, SiMysql, SiDjango } from "react-icons/si";
-import WeatherApp from '../../assets/images/WeatherApp.png';
-import Todolist from '../../assets/images/ToDoListReact.png';
-import JobPortal from '../../assets/images/JobPortal.png';
+import WeatherApp from '../../assets/Images/WeatherApp.png';
+import Todolist from '../../assets/Images/ToDoListReact.png';
+import JobPortal from '../../assets/Images/JobPortal.png';
 
 
 const About = () => {
