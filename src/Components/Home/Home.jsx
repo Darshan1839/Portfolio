@@ -124,7 +124,7 @@ const Home = () => {
 
         <div className="text-center mt-12">
           <Link
-            href="/projects"
+            to="/projects"
             className="px-6 py-3 bg-blue-500 text-white rounded-lg text-lg hover:bg-blue-600 shadow-lg transition hover:scale-105"
           >
             See All Projects 🔥
