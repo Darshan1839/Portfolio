@@ -5,6 +5,7 @@ import WeatherApp from '../../assets/Images/WeatherApp.png';
 import Todolist from "../../assets/Images/ToDoListReact.png";
 import JobPortal from "../../assets/Images/JobPortal.png";
 import profileImg from "../../assets/Images/5312.jpg"; // Replace with your image
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const skills = [
@@ -122,12 +123,12 @@ const Home = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a
+          <Link
             href="/projects"
             className="px-6 py-3 bg-blue-500 text-white rounded-lg text-lg hover:bg-blue-600 shadow-lg transition hover:scale-105"
           >
             See All Projects 🔥
-          </a>
+          </Link>
         </div>
       </section>
     </main>
