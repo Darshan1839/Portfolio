@@ -25,7 +25,7 @@ const projects = [
 
 const ProjectShowcase = () => {
   return (
-    <section className="bg-gray-900 text-white py-16 px-8 md:px-20 h-screen">
+    <section className="bg-gray-900 text-white py-16 px-8 md:px-20 h-auto xl:h-screen">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-5xl font-extrabold mb-6 tracking-wide text-blue-400">
           My Projects 🚀
