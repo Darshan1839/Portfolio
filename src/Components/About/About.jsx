@@ -3,7 +3,7 @@ import { SiTailwindcss, SiMysql, SiDjango } from "react-icons/si";
 import WeatherApp from '../../assets/Images/WeatherApp.png';
 import Todolist from '../../assets/Images/ToDoListReact.png';
 import JobPortal from '../../assets/Images/JobPortal.png';
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const skills = [
@@ -64,7 +64,7 @@ const About = () => {
 
         {/* CTA Button */}
         <button className="px-6 py-3 mt-8 bg-blue-500 rounded-lg text-lg hover:bg-blue-600 shadow-lg transition hover:scale-105">
-          <a href="/projects" target="_blank">See All Projects 🔥</a>
+          <Link to="/projects" target="_blank">See All Projects 🔥</Link>
         </button>
 
       </div>
