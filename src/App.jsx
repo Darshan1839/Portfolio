@@ -56,7 +56,7 @@ const AnimatedRoutes = () => {
             }
           />
            <Route
-            path="projects"
+            path="/projects"
             element={
               <AnimatedPage>
                 <ProjectShowcase />
