@@ -63,9 +63,14 @@ const About = () => {
         </div>
 
         {/* CTA Button */}
-        <button className="px-6 py-3 mt-8 bg-blue-500 rounded-lg text-lg hover:bg-blue-600 shadow-lg transition hover:scale-105">
-          <Link to="/projects" target="_blank">See All Projects 🔥</Link>
-        </button>
+        <div className="text-center mt-12">
+          <Link
+            to="/projects"
+            className="px-6 py-3 bg-blue-500 text-white rounded-lg text-lg hover:bg-blue-600 shadow-lg transition hover:scale-105"
+          >
+            See All Projects 🔥
+          </Link>
+        </div>
 
       </div>
 
